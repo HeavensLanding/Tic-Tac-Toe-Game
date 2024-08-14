@@ -7,21 +7,14 @@ const resetButton = document.getElementById('resetButton');
 const gameCells = document.querySelectorAll('.game-cell');
 console.log("Game cells:", gameCells);
 
-
-
 gameCells.forEach(
-
-        (gameCell, index) => {
-    console.log(index,"Game Cell:", gameCell.id);
-
-    gameCell.addEventListener('click', () => {
-    console.log("Game cell has been clicked!!");
-
-    // gameCell.textContent = "x"
-    gameCell.innerHTML = "x"
+    gameCell.addEventListener('click' () => {
+        if (gameCell == 'COL' {
+            gameCell.innerHTML = "x";
+        }else {
+            gameCell.innerHTML = "y"
+        })
     })
-
-        }
 )
 
 
@@ -37,11 +30,3 @@ const cellSix = document.getElementById('6');
 const cellSeven = document.getElementById('7');
 const cellEight = document.getElementById('8');
 const cellNine = document.getElementById('9');
-
-
-
-//player x goes first
-//player o goes second
-
-
-//
